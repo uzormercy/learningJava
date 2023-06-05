@@ -17,10 +17,35 @@ public class StringFormatting {
 
         System.out.printf("Total value: %.2f\n", 5.69030);
         System.out.printf("Total value: %-6.1f\n", 329.9483);
+        System.out.printf("\n");
 
 
-        // TO String Method toString();
+        // /Compare strings
 
+        String hello = "Hello";
+        String hello2 = "Hello";
+        System.out.println(hello.compareTo(hello2));
+
+        // Concat string
+        String firstname = "Mercy ";
+        String lastname = "Uzor";
+        System.out.println(firstname.concat(lastname));
+
+
+        // Ends with 
+        System.out.println(firstname.endsWith(" "));
+        // Get the length of string
+        System.out.println(firstname.length());
+
+        // Replace string with a new character
+        System.out.println(firstname.replace("rcy", "ssi"));
         
+        String fullname = "Mercy Uzor Okorie";
+        System.out.println(fullname.trim());
+        System.out.println(fullname.toUpperCase());
+        System.out.println(fullname.toLowerCase());
+        
+        String [] stringSplit = fullname.split(" ");
+        System.out.println(stringSplit);
     }
 }
